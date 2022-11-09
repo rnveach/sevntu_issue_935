@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<project name="test" default="build" xmlns:cs="antlib:com.puppycrawl.tools.checkstyle.ant">
+   <target name="build">
+            <cs:checkstyle failOnViolation="false" config="config.xml">
+               <fileset dir="." includes="Test.java" />			   
+            </cs:checkstyle>
+   </target>
+</project>
